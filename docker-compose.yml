@@ -39,8 +39,6 @@ services:
     container_name: nodered
     image: nodered/node-red
     restart: unless-stopped
-    networks:
-      - localnet
     ports:
       - 1880:1880
     volumes:
@@ -50,6 +48,9 @@ services:
       - mosquitto
     environment:
       TZ: "Europe/Austria"
+    networks:
+        example-network:
+          ipv4_address: 172.16.238.12
 
   mosquitto:
       image: eclipse-mosquitto:2
@@ -61,7 +62,7 @@ services:
         - ./mosquitto/password.txt:/mosquitto/config/password.txt
       networks:
         example-network:
-          ipv4_address: 172.16.238.12
+          ipv4_address: 172.16.238.13
 
   influxdb:
     image: influxdb:2.6-alpine
@@ -75,7 +76,7 @@ services:
       - "8086:8086"
     networks:
       example-network:
-        ipv4_address: 172.16.238.13
+        ipv4_address: 172.16.238.14
 
 
   grafana:
@@ -92,7 +93,7 @@ services:
       - ./grafana/plugins/:/var/lib/grafana/plugins
     networks:
       example-network:
-        ipv4_address: 172.16.238.14
+        ipv4_address: 172.16.238.15
   
   nginx:
     image: arm64v8/nginx
