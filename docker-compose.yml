@@ -4,11 +4,8 @@ services:
 
   home-assistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant:2022.5.4
+    image: lscr.io/linuxserver/homeassistant
     restart: unless-stopped
-    networks:
-      example-network:
-        ipv4_address: 172.16.238.10
     volumes:
       - ./homeassistant/config:/config
       - ./homeassistant/media:/media
@@ -19,21 +16,24 @@ services:
       - 1400:1400
     environment:
       TZ: "Europe/Austria"
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.10
       
 
   postgres:
     container_name: postgres
-    image: postgres:12.6
+    image:  postgres:14-alpine
     restart: unless-stopped
+    ports:
+      - 5432:5432
+    env_file:
+      - home.env
+    volumes:
+      - postgresqldata:/var/lib/postgresql/data
     networks:
       example-network:
         ipv4_address: 172.16.238.11
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_DB: homeassistant
-      POSTGRES_USER: ha_user
-      POSTGRES_PASSWORD: CrazyStr0ngPa$$word
 
   nodered:
     container_name: nodered
@@ -58,6 +58,7 @@ services:
         - 1883:1883
       volumes: 
         - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+        - ./mosquitto/password.txt:/mosquitto/config/password.txt
       networks:
         example-network:
           ipv4_address: 172.16.238.12
