@@ -1,0 +1,121 @@
+version: '3.1'
+
+services:
+
+  home-assistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant:2022.5.4
+    restart: unless-stopped
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.10
+    volumes:
+      - ./homeassistant/config:/config
+      - ./homeassistant/media:/media
+    depends_on:
+      - mosquitto
+    ports:
+      - 8123:8123
+      - 1400:1400
+    environment:
+      TZ: "Europe/Austria"
+      
+
+  postgres:
+    container_name: postgres
+    image: postgres:12.6
+    restart: unless-stopped
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.11
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: homeassistant
+      POSTGRES_USER: ha_user
+      POSTGRES_PASSWORD: CrazyStr0ngPa$$word
+
+  nodered:
+    container_name: nodered
+    image: nodered/node-red
+    restart: unless-stopped
+    networks:
+      - localnet
+    ports:
+      - 1880:1880
+    volumes:
+      - ./homeassistant/nodered:/data
+    depends_on:
+      - home-assistant
+      - mosquitto
+    environment:
+      TZ: "Europe/Austria"
+
+  mosquitto:
+      image: eclipse-mosquitto:2
+      restart: unless-stopped
+      ports:
+        - 1883:1883
+      volumes: 
+        - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      networks:
+        example-network:
+          ipv4_address: 172.16.238.12
+
+  influxdb:
+    image: influxdb:2.6-alpine
+    restart: unless-stopped
+    env_file:
+      - home.env
+    volumes:
+      # Mount for influxdb data directory and configuration
+      - influxdbv2:/var/lib/influxdb2:rw
+    ports:
+      - "8086:8086"
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.13
+
+
+  grafana:
+    image: grafana/grafana:9.2.3
+    restart: unless-stopped
+    env_file:
+      - home.env
+    depends_on:
+      - influxdb
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./grafana/:/etc/grafana
+      - ./grafana/plugins/:/var/lib/grafana/plugins
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.14
+  
+  nginx:
+    image: arm64v8/nginx
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.20
+
+      
+networks:
+  example-network:
+    name: example-network
+    driver: bridge
+    ipam:
+      driver: default
+      config: 
+        - subnet: 172.16.238.0/24
+    
+
+volumes:
+  postgresqldata:
+  influxdbv2:
