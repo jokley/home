@@ -1,0 +1,820 @@
+switch: 
+  - name: "Licht gesamt schalten"
+    address: "1/0/0"
+   
+  - name: "Dämmerungsschalter"
+    address: "1/0/1"
+   
+  - name: "Keller Licht Raumschaltung"
+    address: "1/0/10"
+   
+  - name: "Bad Licht Raumschaltung"
+    address: "1/0/11"
+   
+  - name: "Ankleide Licht Raumschaltung"
+    address: "1/0/12"
+   
+  - name: "Schlafzimmer Licht Raumschaltung"
+    address: "1/0/13"
+   
+  - name: "Hobby Licht Raumschaltung"
+    address: "1/0/14"
+   
+  - name: "Gang UG Licht Raumschaltung"
+    address: "1/0/15"
+   
+  - name: "Vorplatz UG Licht Raumschaltung"
+    address: "1/0/16"
+   
+  - name: "Garage Licht Raumschaltung"
+    address: "1/0/17"
+   
+  - name: "Ski Service Licht Raumschaltung"
+    address: "1/0/18"
+   
+  - name: "Kind 1 Licht Raumschaltung"
+    address: "1/0/19"
+
+  - name: "Kind 2 Licht Raumschaltung"
+    address: "1/0/20"
+   
+  - name: "Vorratsraum Licht Raumschaltung"
+    address: "1/0/21"
+
+  - name: "Kinder Bad Licht Raumschaltung"
+    address: "1/0/22"
+   
+  - name: "Hauswirtschaftsraum Licht Raumschaltung"
+    address: "1/0/23"
+   
+  - name: "Gang EG Licht Raumschaltung"
+    address: "1/0/24"
+   
+  - name: "Treppenhaus Licht Raumschaltung"
+    address: "1/0/25"
+   
+  - name: "Speis Licht Raumschaltung"
+    address: "1/0/26"
+   
+  - name: "WC OG Licht Raumschaltung"
+    address: "1/0/27"
+   
+  - name: "Gang OG Licht Raumschaltung"
+    address: "1/0/28"
+   
+  - name: "Küche Licht Raumschaltung"
+    address: "1/0/29"
+   
+  - name: "Wohnen Licht Raumschaltung"
+    address: "1/0/30"
+   
+  - name: "Büro Licht Raumschaltung"
+    address: "1/0/31"
+
+  - name: "Terrasse Licht Raumschaltung"
+    address: "1/0/32"
+   
+  - name: "Parkplatz OG Licht Raumschaltung"
+    address: "1/0/33"
+   
+  - name: "Wohnzimmer Fernsehen"
+    address: "1/6/1"
+   
+  - name: "Küche Musik play/pause"
+    address: "1/7/0"
+   
+  - name: "Küche Musik  Power off"
+    address: "1/7/1"
+   
+  - name: "Küche Musik lauter"
+    address: "1/7/2"
+   
+  - name: "Küche Musik leiser"
+    address: "1/7/3"
+   
+  - name: "Ski Musik play/pause"
+    address: "1/7/4"
+   
+  - name: "Ski Musik Power off"
+    address: "1/7/5"
+   
+  - name: "Ski Musik lauter"
+    address: "1/7/6"
+   
+  - name: "Ski Musik leiser"
+    address: "1/7/7"
+   
+  - name: "Terasse Musik play"
+    address: "1/7/8"
+   
+  - name: "Terasse Musik pause"
+    address: "1/7/9"
+   
+  - name: "Terasse Musik lauter"
+    address: "1/7/10"
+   
+  - name: "Terasse Musik leiser"
+    address: "1/7/11"
+   
+  - name: "Bad Musik play"
+    address: "1/7/12"
+   
+  - name: "Bad Musik pause"
+    address: "1/7/13"
+   
+  - name: "Bad Musik lauter"
+    address: "1/7/14"
+   
+  - name: "Bad Musik leiser"
+    address: "1/7/15"
+   
+  - name: "Hobby Musik play"
+    address: "1/7/16"
+   
+  - name: "Hobby Musik pause"
+    address: "1/7/17"
+   
+  - name: "Hobby Musik lauter"
+    address: "1/7/18"
+   
+  - name: "Hobby Musik leiser"
+    address: "1/7/19"
+   
+  - name: "Schalfzimmer Musik Michi play"
+    address: "1/7/20"
+   
+  - name: "Schalfzimmer Musik Michi pause"
+    address: "1/7/21"
+   
+  - name: "Schalfzimmer Musik Michi lauter"
+    address: "1/7/22"
+   
+  - name: "Schalfzimmer Musik Michi leiser"
+    address: "1/7/23"
+   
+  - name: "Schalfzimmer Musik Reini play"
+    address: "1/7/24"
+   
+  - name: "Schalfzimmer Musik Reini pause"
+    address: "1/7/25"
+   
+  - name: "Schalfzimmer Musik Reini lauter"
+    address: "1/7/26"
+   
+  - name: "Schalfzimmer Musik Reini leiser"
+    address: "1/7/27"
+   
+  - name: "Garage Musik play/pause"
+    address: "1/7/28"
+   
+  - name: "Garage Musik Power off"
+    address: "1/7/29"
+   
+  - name: "Garage Musik lauter"
+    address: "1/7/30"
+   
+  - name: "Garage Musik leiser"
+    address: "1/7/31"
+   
+  - name: "Platz UG Musik play/pause"
+    address: "1/7/32"
+   
+  - name: "Platz UG Musik lauter / leiser"
+    address: "1/7/33"
+   
+light: 
+  - name: "Keller Deckenlicht Keller schalten"
+    address: "1/1/0"
+    state_address: "1/4/0"
+
+  - name: "Garage Decken Licht dauer"
+    address: "1/1/1"
+    state_address: "1/4/1"
+
+  - name: "Garage Keller  dauer"
+    address: "1/1/2"
+    state_address: "1/4/2"
+
+  - name: "Spiegel ein "
+    address: "1/1/5"
+    state_address: "1/4/5"
+
+  - name: "Bad Deckenlicht Bad 1 schalten"
+    address: "1/1/6"
+    state_address: "1/4/6"
+    brightness_address: "1/2/5"
+    brightness_state_address: "1/3/5"
+   
+  - name: "Bad Spiegel u. Steckdose schalten"
+    address: "1/1/7"
+    state_address: "1/4/7"
+
+  - name: "Bad Licht dimmen Bad 2 schalten"
+    address: "1/1/8"
+    state_address: "1/4/8"
+    brightness_address: "1/2/6"
+    brightness_state_address: "1/3/6"
+   
+  - name: "Bad Licht Nische RGB schalten"
+    address: "1/1/9"
+    state_address: "1/4/9"
+
+  - name: "Bad Musik Bad schalten"
+    address: "1/1/10"
+    state_address: "1/4/10"
+
+  - name: "Bad Blendschutz Süd"
+    address: "1/1/11"
+    state_address: "1/4/11"
+
+  - name: "Bad Blendschutz Nord"
+    address: "1/1/12"
+    state_address: "1/4/12"
+
+  - name: "Ankleide Licht Schlupf schalten"
+    address: "1/1/16"
+    state_address: "1/4/16"
+
+  - name: "Ankleide Deckenlicht Ankleide schalten"
+    address: "1/1/17"
+    state_address: "1/4/17"
+    brightness_address: "1/2/12"
+    brightness_state_address: "1/3/12"
+   
+  - name: "Ankleide Blendschutz "
+    address: "1/1/18"
+    state_address: "1/4/18"
+
+  - name: "Blendschutz ein/aus"
+    address: "1/1/19"
+    state_address: "1/4/19"
+
+  - name: "Schlafzimmer Deckenlicht Eltern schalten"
+    address: "1/1/23"
+    state_address: "1/4/23"
+    brightness_address: "1/2/18"
+    brightness_state_address: "1/3/18"
+   
+  - name: "Schlafzimmer Nachttisch links schalten"
+    address: "1/1/24"
+    state_address: "1/4/24"
+
+  - name: "Schlafzimmer Nachttisch rechts schalten"
+    address: "1/1/25"
+    state_address: "1/4/25"
+
+  - name: "Schlafzimmer Musik Eltern schalten"
+    address: "1/1/26"
+    state_address: "1/4/26"
+
+  - name: "Hobby Deckenlicht Hobby schalten"
+    address: "1/1/32"
+    state_address: "1/4/32"
+
+  - name: "Hobby Schreibtisch/Wickeltisch/Steckdose schalten"
+    address: "1/1/33"
+    state_address: "1/4/33"
+
+  - name: "Hobby Musik Hobby schalten"
+    address: "1/1/34"
+    state_address: "1/4/34"
+
+  - name: "Gang UG Deckenlicht Gang UG schalten"
+    address: "1/1/40"
+    state_address: "1/4/40"
+
+  - name: "Vorplatz UG Beleuchtung Platz schalten"
+    address: "1/1/46"
+    state_address: "1/4/46"
+
+  - name: "Vorplatz UG Außenlicht / Keller schalten"
+    address: "1/1/47"
+    state_address: "1/4/47"
+
+  - name: "Garten UG Platz Licht"
+    address: "1/1/48"
+    state_address: "1/4/48"
+
+  - name: "Garten  Ost/Süd"
+    address: "1/1/49"
+    state_address: "1/4/49"
+
+  - name: "Garten  Süd/West"
+    address: "1/1/51"
+    state_address: "1/4/51"
+
+  - name: "Garage Deckenlicht Garage schalten"
+    address: "1/1/54"
+    state_address: "1/4/54"
+
+  - name: "Garage Außenlicht / Keller schalten"
+    address: "1/1/55"
+    state_address: "1/4/55"
+
+  - name: "Garage Musik Garage schalten"
+    address: "1/1/56"
+    state_address: "1/4/56"
+
+  - name: "Garage Licht Vorplaatz Garage schalten"
+    address: "1/1/57"
+    state_address: "1/4/57"
+
+  - name: "Garage Ekey Garagentor schalten"
+    address: "1/1/58"
+    state_address: "1/4/58"
+
+  - name: "Ski Service Deckenlicht Ski  schalten"
+    address: "1/1/64"
+    state_address: "1/4/64"
+
+  - name: "Ski Service Licht Werkbank/Bügeleisen schalten"
+    address: "1/1/65"
+    state_address: "1/4/65"
+
+  - name: "Ski Service Musik Ski schalten"
+    address: "1/1/66"
+    state_address: "1/4/66"
+
+  - name: "Kind 1 Deckenlicht Kind 1 schalten"
+    address: "1/1/72"
+    state_address: "1/4/72"
+    brightness_address: "1/2/49"
+    brightness_state_address: "1/3/49"
+   
+  - name: "Kind 1 Schreibtisch Kind 1 schalten"
+    address: "1/1/73"
+    state_address: "1/4/73"
+
+  - name: "Kind 2 Deckenlicht Kind 2 schalten"
+    address: "1/1/79"
+    state_address: "1/4/79"
+    brightness_address: "1/2/55"
+    brightness_state_address: "1/3/55"
+   
+  - name: "Kind 2 Schreibtisch Kind 2 schalten"
+    address: "1/1/80"
+    state_address: "1/4/80"
+
+  - name: "Vorratsraum Deckenlicht Vorratsraum schalten"
+    address: "1/1/86"
+    state_address: "1/4/86"
+
+  - name: "Kinder Bad Deckenlicht u. Spiegel/Steckdose K-Bad schalten"
+    address: "1/1/92"
+    state_address: "1/4/92"
+
+  - name: "Hauswirtschaftsraum Deckenlicht Technik schalten"
+    address: "1/1/98"
+    state_address: "1/4/98"
+
+  - name: "Gang EG Deckenlicht Gang EG schalten"
+    address: "1/1/104"
+    state_address: "1/4/104"
+
+  - name: "Gang EG Deckenlicht Gang EG 2 schalten"
+    address: "1/1/105"
+    state_address: "1/4/105"
+
+  - name: "Treppenhaus Licht schalten UG/EG schalten"
+    address: "1/1/110"
+    state_address: "1/4/110"
+
+  - name: "Treppenhaus Licht schalten EG/OG schalten"
+    address: "1/1/111"
+    state_address: "1/4/111"
+
+  - name: "Speis Deckenlicht Speiß schalten"
+    address: "1/1/117"
+    state_address: "1/4/117"
+
+  - name: "WC OG Deckenlicht WC OG schalten"
+    address: "1/1/123"
+    state_address: "1/4/123"
+  
+  - name: "Gang OG Deckenlicht schalten"
+    address: "1/1/129"
+    state_address: "1/4/129"
+
+  - name: "Licht Gang OG Ekey"
+    address: "1/1/130"
+    state_address: "1/4/130"
+
+  - name: "Küche Licht Insel schalten"
+    address: "1/1/135"
+    state_address: "1/4/135"
+
+  - name: "Küche Licht Küche Esstisch schalten"
+    address: "1/1/136"
+    state_address: "1/4/136"
+
+  - name: "Küche Licht Küche indirekt schalten"
+    address: "1/1/137"
+    state_address: "1/4/137"
+
+  - name: "Küche Musik Küche schalten"
+    address: "1/1/138"
+    state_address: "1/4/138"
+
+  - name: "Küche Musik sperre"
+    address: "1/1/139"
+    state_address: "1/4/139"
+
+  - name: "Wohnen Stehleuchte Wohnzimmer schalten"
+    address: "1/1/144"
+    state_address: "1/4/144"
+    brightness_address: "1/2/106"
+    brightness_state_address: "1/3/106"
+   
+  - name: "Wohnen Wohnwand indirekt schalten"
+    address: "1/1/145"
+    state_address: "1/4/145"
+
+  - name: "Wohnen Deckenlicht Wohnzimmer schalten"
+    address: "1/1/146"
+    state_address: "1/4/146"
+
+  - name: "Wohnen Deckenlicht dauer ein"
+    address: "1/1/147"
+    state_address: "1/4/147"
+
+  - name: "Büro Deckenlicht Büro schalten"
+    address: "1/1/152"
+    state_address: "1/4/152"
+
+  - name: "Büro Schreibtisch schalten"
+    address: "1/1/153"
+    state_address: "1/4/153"
+
+  - name: "Terrasse Deckenlicht Terasse schalten"
+    address: "1/1/158"
+    state_address: "1/4/158"
+    brightness_address: "1/2/117"
+    brightness_state_address: "1/3/117"
+   
+  - name: "Terrasse Grill Terasse schalten"
+    address: "1/1/159"
+    state_address: "1/4/159"
+
+  - name: "Terrasse RGB Terasse schalten"
+    address: "1/1/160"
+    state_address: "1/4/160"
+
+  - name: "Parkplatz OG Licht OG Außen Haustüre schalten"
+    address: "1/1/166"
+    state_address: "1/4/166"
+
+  - name: "Parkplatz OG Licht OG Außen West schalten"
+    address: "1/1/167"
+    state_address: "1/4/167"
+
+  - name: "Parkplatz OG Licht OG Außen Ost schalten"
+    address: "1/1/168"
+    state_address: "1/4/168"
+
+  - name: "Parkplatz OG Haustüre öffnen schalten"
+    address: "1/1/169"
+    state_address: "1/4/169"
+
+  - name: "Gang OG Windfang"
+    address: "1/1/170"
+    state_address: "1/4/170"
+
+  - name: "Wecker ein/aus Michi"
+    address: "1/1/171"
+    state_address: "1/4/171"
+
+  - name: "Wecker ein/aus Reini"
+    address: "1/1/172"
+    state_address: "1/4/172"
+
+  - name: "Weihnachtsbeleuchtung"
+    address: "1/1/173"
+    state_address: "1/4/173"
+
+  - name: "Wecker Sequenz aus Reini"
+    address: "1/1/174"
+    state_address: "1/4/174"
+
+  - name: "Wecker Sequenz aus Michi"
+    address: "1/1/175"
+    state_address: "1/4/175"
+
+  - name: "Klingel"
+    address: "1/1/179"
+    state_address: "1/4/179"
+
+  - name: "Klingel Bereitschaft ein/aus"
+    address: "1/1/180"
+    state_address: "1/4/180"
+
+  - name: "Küche  Herd"
+    address: "1/1/181"
+    state_address: "1/4/181"
+
+  - name: "Küche Backrohr"
+    address: "1/1/182"
+    state_address: "1/4/182"
+
+  - name: "Küche Dampfgarer"
+    address: "1/1/183"
+    state_address: "1/4/183"
+
+  - name: "Wohnzimmer TV"
+    address: "1/1/187"
+    state_address: "1/4/184"
+
+cover: 
+  - name: "Bad Jalousie Bad Bewegen"
+    move_long_address: "2/1/0"
+    move_short_address: "2/2/0"
+    position_address: "2/5/2"
+    angle_address: "2/6/2"
+    position_state_address: "2/4/2"
+    angle_state_address: "2/4/3"
+    travelling_time_down: 45
+    travelling_time_up: 45
+    
+  - name: "Schlafzimmer Jalousie Eltern Bewegen"
+    move_long_address: "2/1/6"
+    move_short_address: "2/2/6"
+    position_address: "2/5/1"
+    angle_address: "2/6/1"
+    position_state_address: "2/4/4"
+    angle_state_address: "2/4/5"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Hobby Jalousie Hobby Süd Bewegen"
+    move_long_address: "2/1/12"
+    move_short_address: "2/2/12"
+    position_address: "2/5/3"
+    angle_address: "2/6/3"
+    position_state_address: "2/4/6"
+    angle_state_address: "2/4/7"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Hobby Jalousie Hobby Ost Bewegen"
+    move_long_address: "2/1/13"
+    move_short_address: "2/1/13"
+    position_address: "2/5/4"
+    angle_address: "2/6/4"
+    position_state_address: "2/4/8"
+    angle_state_address: "2/4/9"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Garage Garagentor Bewegen"
+    move_long_address: "2/2/19"
+    move_short_address: "2/2/20"
+    travelling_time_down: 25
+    travelling_time_up: 25
+   
+  - name: "Ski Service Jalousie Ski Bewegen"
+    move_long_address: "2/1/25"
+    move_short_address: "2/2/25"
+    position_address: "2/5/5"
+    angle_address: "2/6/5"
+    position_state_address: "2/4/10"
+    angle_state_address: "2/4/11"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Kind 1 Jalousie Kind 1 Bewegen"
+    move_long_address: "2/1/31"
+    move_short_address: "2/2/31"
+    position_address: "2/5/6"
+    angle_address: "2/6/6"
+    position_state_address: "2/4/12"
+    angle_state_address: "2/4/13"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Kind 2 Jalousie Kind 2 Bewegen"
+    move_long_address: "2/1/37"
+    move_short_address: "2/2/37"
+    position_address: "2/5/7"
+    angle_address: "2/6/7"
+    position_state_address: "2/4/14"
+    angle_state_address: "2/4/15"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Küche Jalousie Küche Süd Bewegen"
+    move_long_address: "2/1/43"
+    move_short_address: "2/2/43"
+    position_address: "2/5/8"
+    angle_address: "2/6/8"
+    position_state_address: "2/4/22"
+    angle_state_address: "2/4/23"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Küche Jalousie Küche West Bewegen"
+    move_long_address: "2/1/44"
+    move_short_address: "2/2/44"
+    position_address: "2/5/10"
+    angle_address: "2/6/10"
+    position_state_address: "2/4/18"
+    angle_state_address: "2/4/19"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Küche Jalousie Küche Schiebetüre Bewegen"
+    move_long_address: "2/1/45"
+    move_short_address: "2/2/45"
+    position_address: "2/5/11"
+    angle_address: "2/6/11"
+    position_state_address: "2/4/16"
+    angle_state_address: "2/4/17"
+    travelling_time_down: 65
+    travelling_time_up: 65
+   
+  - name: "Wohnen Jalousie Wohnzimmer Bewegen"
+    move_long_address: "2/1/51"
+    move_short_address: "2/2/51"
+    position_address: "2/5/0"
+    angle_address: "2/6/0"
+    position_state_address: "2/4/0"
+    angle_state_address: "2/4/1"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Küche Jalousie Süd 2 Bewegen"
+    move_long_address: "2/1/52"
+    move_short_address: "2/2/52"
+    position_address: "2/5/9"
+    angle_address: "2/6/9"
+    position_state_address: "2/4/22"
+    angle_state_address: "2/4/23"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Zentral Bewegen"
+    move_long_address: "2/0/0"
+    move_short_address: "2/2/20"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Sonnenautomatik OST"
+    move_long_address: "2/0/3"
+    position_address: "2/0/6"
+    angle_address: "2/0/9"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Sonnenautomatik Süd"
+    move_long_address: "2/0/4"
+    position_address: "2/0/7"
+    angle_address: "2/0/10"
+    travelling_time_down: 45
+    travelling_time_up: 45
+   
+  - name: "Sonnenautomatik West"
+    move_long_address: "2/0/5"
+    position_address: "2/0/8"
+    angle_address: "2/0/11"
+    travelling_time_down: 45
+    travelling_time_up: 45
+    
+sensor: 
+  - name: "Bad Heizung Isttemperatur"
+    state_address: "3/1/0"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Schlafzimmer Heizung Isttemperatur"
+    state_address: "3/1/1"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Hobby Heizung Isttemperatur"
+    state_address: "3/1/2"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Gang UG Heizung Isttemperatur"
+    state_address: "3/1/3"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Ski Service Heizung Isttemperatur"
+    state_address: "3/1/4"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Kind 1 Heizung Isttemperatur"
+    state_address: "3/1/5"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Kind 2 Heizung Isttemperatur"
+    state_address: "3/1/6"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Kinder Bad Heizung Isttemperatur"
+    state_address: "3/1/7"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Gang EG Heizung Isttemperatur"
+    state_address: "3/1/8"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "WC OG Heizung Isttemperatur"
+    state_address: "3/1/9"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Gang OG Heizung Isttemperatur"
+    state_address: "3/1/10"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Küche Heizung Isttemperatur"
+    state_address: "3/1/11"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Wohnen Heizung Isttemperatur"
+    state_address: "3/1/12"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Büro Heizung Isttemperatur"
+    state_address: "3/1/13"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Garage Heizung Isttemperatur"
+    state_address: "3/1/14"
+    type: "temperature"
+    state_class: "measurement"
+   
+  - name: "Strom Fernseher"
+    state_address: "3/6/9"
+    type: "current"
+    state_class: "measurement"
+   
+  - name: "Strom Küche Herd L1 u L2"
+    state_address: "3/6/10"
+    type: "current"
+    state_class: "measurement"
+   
+  - name: "Strom Küche Herd"
+    state_address: "3/6/11"
+    type: "current"
+    state_class: "measurement"
+   
+  - name: "Strom Küche Dampfgarer"
+    state_address: "3/6/12"
+    type: "current"
+    state_class: "measurement"
+   
+binary_sensor: 
+  - name: "Bad Heizung Fensterkontakt"
+    state_address: "3/5/0"
+   
+  - name: "Schlafzimmer Heizung Fensterkontakt"
+    state_address: "3/5/1"
+   
+  - name: "Hobby Heizung Fensterkontakt"
+    state_address: "3/5/2"
+   
+  - name: "Gang UG Heizung Fensterkontakt"
+    state_address: "3/5/3"
+   
+  - name: "Ski Service Heizung Fensterkontakt"
+    state_address: "3/5/4"
+   
+  - name: "Kind 1 Heizung Fensterkontakt"
+    state_address: "3/5/5"
+   
+  - name: "Kind 2 Heizung Fensterkontakt"
+    state_address: "3/5/6"
+   
+  - name: "Kinder Bad Heizung Fensterkontakt"
+    state_address: "3/5/7"
+   
+  - name: "Garagentor geschlossen"
+    state_address: "3/5/8"
+   
+  - name: "Schiebetüre Fensterkontakt"
+    state_address: "3/5/9"
+   
+  - name: "Küche 1 Fensterkontakt"
+    state_address: "3/5/10"
+   
+  - name: "Küche 2 Fensterkontakt"
+    state_address: "3/5/11"
+   
+  - name: "Wohnen Heizung Fensterkontakt"
+    state_address: "3/5/12"
+   
+  - name: "Büro Heizung Fensterkontakt"
+    state_address: "3/5/13"
+   
+  - name: "Garagentor offen"
+    state_address: "3/5/14"
